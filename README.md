@@ -89,9 +89,10 @@ If you prefer just running the demos from your local Python environment, skip to
 ## Using the Management Portal
 
 1. Navigate to http://localhost:52773/csp/sys/UtilHome.csp, login with username: demo, password: demo (or whatever you configured)
-2. On the left navigation pane, click 'System Explorer'
-3. Click 'SQL' -> 'Go'
-4. Here, you can execute SQL queries. You can also view the tables by clicking the relevant table on the left, under 'Tables', and then clicking 'Open Table' (above the SQL query box)
+2. Change the namespace (on the top left) from %SYS to USER
+3. On the left navigation pane, click 'System Explorer'
+4. Click 'SQL' -> 'Go'
+5. Here, you can execute SQL queries. You can also view the tables by clicking the relevant table on the left, under 'Tables', and then clicking 'Open Table' (above the SQL query box)
 
 ## Basic Demos
 
