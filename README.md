@@ -60,14 +60,14 @@ If you prefer just running the demos from your local Python environment, skip to
     venv (Windows):
     ```Shell
     python -m venv iris-vector-search
-    .\venv\Scripts\Activate
+    .\iris-vector-search\Scripts\Activate
     ```
     or 
 
     venv (Unix):
     ```Shell
     python -m venv iris-vector-search
-    source ./venv/bin/activate
+    source ./iris-vector-search/bin/activate
     ```
 
 4. Install packages for all demos:
