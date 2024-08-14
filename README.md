@@ -1,6 +1,6 @@
 # InterSystems IRIS Vector Search
 
-With the 2024.1 release, we're adding a powerful [Vector Search capability to the InterSystems IRIS Data Platform](https://www.intersystems.com/news/iris-vector-search-support-ai-applications/), to help you innovate faster and build intelligent applications powered by Generative AI. At the center of the new capability is a new [`VECTOR` native datatype](https://docs.intersystems.com/iris20241/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_datatype#RSQL_datatype_vector) for IRIS SQL, along with [similarity functions](https://docs.intersystems.com/iris20241/csp/docbook/Doc.View.cls?KEY=GSQL_vecsearch) that leverage optimized chipset instructions (SIMD).
+This year, we're adding a powerful [Vector Search capability to the InterSystems IRIS Data Platform](https://www.intersystems.com/news/iris-vector-search-support-ai-applications/), to help you innovate faster and build intelligent applications powered by Generative AI. At the center of the new capability is a new [`VECTOR` native datatype](https://docs.intersystems.com/iris20241/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_datatype#RSQL_datatype_vector) for IRIS SQL, along with [similarity functions](https://docs.intersystems.com/iris20241/csp/docbook/Doc.View.cls?KEY=GSQL_vecsearch) that leverage optimized chipset instructions (SIMD).
 
 This repository offers code samples to get you started with the new features, and we'll continue to add more, but encourage you to let us know about your own experiments on the [InterSystems Developer Community](https://community.intersystems.com). At the bottom of this page, you'll find links to a few demo repositories we liked a lot!
 
@@ -9,7 +9,7 @@ This repository offers code samples to get you started with the new features, an
 
 1. Clone the repo
     ```Shell
-    git clone https://github.com/intersystems-community/iris-vector-search.git
+    git clone https://github.com/intersystems-community/hackmit-2024.git
     ```
    
 
@@ -23,9 +23,9 @@ If you prefer just running the demos from your local Python environment, skip to
       OPENAI_API_KEY: xxxxxxxxx
     ```
 
-3. Change your directory to hackupc-2024
+3. Change your directory to hackmit-2024
     ```Shell
-    cd hackupc-2024
+    cd hackmit-2024
     ```
 
 4. Start the Docker containers (one for IRIS, one for Jupyter):
