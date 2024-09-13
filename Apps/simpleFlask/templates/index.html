@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table and Insert Data</title>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Create Table</h2>
+        <label for="table_name">Table Name:</label>
+        <input type="text" id="table_name" required placeholder=" use Schema.TableName format only">
+        <label for="schema">Table Definition:</label>
+        <input type="text" id="schema" required
+            placeholder="e.g., (myvarchar VARCHAR(255), myint INTEGER, myfloat FLOAT)">
+        <button onclick="createTable()">Create Table</button>
+    </div>
+
+    <div class="form-container">
+        <h2>Insert Data</h2>
+        <label for="table_name_insert">Table Name:</label>
+        <input type="text" id="table_name_insert" required placeholder="Schema.TableName">
+        <label for="columns">Columns (comma-separated):</label>
+        <input type="text" id="columns" required placeholder="e.g., (myvarchar , myint, myfloat) ">
+        <label for="data">Data (comma-separated):</label>
+        <input type="text" id="data" required
+            placeholder="insert as a list of tuples e.g., [('abc',8,9.0),('def',34,6.24)]">
+        <button onclick="insertData()">Insert Data</button>
+    </div>
+
+    <div class="form-container">
+        <h2>Get Data</h2>
+        <label for="table_name_get">Table Name:</label>
+        <input type="text" id="table_name_get" required placeholder="Schema.TableName">
+        <button onclick="getData()">Get Data</button>
+    </div>
+
+    <h3>Response:</h3>
+    <pre id="output"></pre>
+
+    <!-- Inline JavaScript -->
+    <script src="../static/onclickFunctions.js"></script>
+
+</body>
+
+</html>
