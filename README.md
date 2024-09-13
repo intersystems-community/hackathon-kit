@@ -110,7 +110,7 @@ IRIS now has a llama_index integration as a VectorDB! In this demo, we use the l
 
 ## Which to use?
 
-If you need to use search with filters, use IRIS SQL. This is the most flexible way
+If you need to use search with filters, use IRIS SQL. This is the most flexible way to build RAG.
 
 If you're building a genAI app that uses a variety of tools (agents, chained reasoning, api calls), go for langchain. 
 

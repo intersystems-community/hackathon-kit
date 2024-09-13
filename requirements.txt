@@ -2,6 +2,7 @@ sqlalchemy-iris
 langchain-iris
 testcontainers-iris
 llama-iris
+llama-index
 sentence-transformers
 langchain
 fastembed 
