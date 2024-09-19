@@ -2,8 +2,13 @@
 
 This year, we're adding a powerful [Vector Search capability to the InterSystems IRIS Data Platform](https://www.intersystems.com/news/iris-vector-search-support-ai-applications/), to help you innovate faster and build intelligent applications powered by Generative AI. At the center of the new capability is a new [`VECTOR` native datatype](https://docs.intersystems.com/iris20241/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_datatype#RSQL_datatype_vector) for IRIS SQL, along with [similarity functions](https://docs.intersystems.com/iris20241/csp/docbook/Doc.View.cls?KEY=GSQL_vecsearch) that leverage optimized chipset instructions (SIMD).
 
-This repository offers code samples to get you started with the new features, and we'll continue to add more, but encourage you to let us know about your own experiments on the [InterSystems Developer Community](https://community.intersystems.com). At the bottom of this page, you'll find links to a few demo repositories we liked a lot!
+## Demos
 
+In the demos folder, sql_demo.ipynb, langchain_demo.ipynb, llama_demo.ipynb are built on the community [sqlalchemy python package](https://pypi.org/project/sqlalchemy-iris/)
+
+sql_dbapi_demo.ipynb uses the [official dbapi package](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=BPYNAT_pyapi).
+
+The python .whl file is provided in the repo. It can also be downloaded [here](https://intersystems-community.github.io/iris-driver-distribution/).
 
 ## InterSystems IRIS Vector Search Quickstart
 
@@ -46,15 +51,14 @@ This repository offers code samples to get you started with the new features, an
     pip install -r requirements.txt
     ```
 
-5. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Create a `.env` file in this repo to store the key:
+5. Install Intersystem's DB API connector (run this from the root of the repo):
+    ```Shell
+    pip install intersystems_irispython-3.2.0-py3-none-any.whl 
+    ```
+
+6. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Create a `.env` file in this repo to store the key:
     ```
     OPENAI_API_KEY=xxxxxxxxx
-    ```
-    
-6. The demos in this repository are formatted as Jupyter notebooks. To run them, just start Jupyter and navigate to the `/demo/` folder:
-
-    ```Shell
-    jupyter lab
     ```
 
 ## Using the Management Portal
