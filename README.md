@@ -30,15 +30,15 @@ This repository offers code samples to get you started with the new features, an
 
     venv (Windows):
     ```Shell
-    python -m venv iris-vector-search
-    .\iris-vector-search\Scripts\Activate
+    python -m venv iris-env
+    .\iris-env\Scripts\Activate
     ```
     or 
 
     venv (Unix):
     ```Shell
-    python -m venv iris-vector-search
-    source ./iris-vector-search/bin/activate
+    python -m venv iris-env
+    source ./iris-env/bin/activate
     ```
 
 4. Install packages for all demos:
