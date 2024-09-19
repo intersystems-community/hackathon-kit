@@ -9,37 +9,8 @@ This repository offers code samples to get you started with the new features, an
 
 1. Clone the repo
     ```Shell
-    git clone https://github.com/intersystems-community/hackmit-2024.git
+    git clone https://github.com/intersystems-community/hackathon-2024.git
     ```
-   
-
-### Using a Jupyter container
-
-If you prefer just running the demos from your local Python environment, skip to [Using your local Python environment](#using-your-local-python-environment).
-
-
-2. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Update the corresponding entry in `docker-compose.yml`:
-    ```
-      OPENAI_API_KEY: xxxxxxxxx
-    ```
-
-3. Change your directory to hackmit-2024
-    ```Shell
-    cd hackmit-2024
-    ```
-
-4. Start the Docker containers (one for IRIS, one for Jupyter):
-    ```Shell
-    docker-compose up
-    ```
-5. Once loaded, navigate to http://localhost:8888/lab to access the notebook. To view the container information, run in a new terminal:
-    ```Shell
-    docker-compose ps
-    ```
-
-### Using your local Python environment 
-
-#### Note: if you used the previous method (Jupyter container), you will need to stop the previous docker container before running the following steps, as they will try to use the same port (Alternatively, use a different port)
 
 
 2. Install IRIS Community Edtion in a container:
@@ -52,7 +23,7 @@ If you prefer just running the demos from your local Python environment, skip to
     
     conda:
     ```Shell
-    conda create --name iris-vector-search python=3.10
+    conda create --name iris-env python=3.10
     conda activate
     ```
     or 
