@@ -79,22 +79,6 @@ IRIS now has a langchain integration as a VectorDB! In this demo, we use the lan
 
 IRIS now has a llama_index integration as a VectorDB! In this demo, we use the llama_index framework with IRIS to ingest and search through a document. 
 
-### [IRISDatabaseOperations.ipynb](demo/IRISDatabaseOperations.ipynb)
-
-If you are more comfortable with traditional forms of connection to a relational database like **pyodbc**, this and the next notebook will allow you to use the DB-API connection to IRIS db.
-This notebook covers the basic CRUD operations.
-
-### [SemanticSearch.ipynb](demo/SemanticSearch.ipynb)
-
-Building on IRISDatabaseOperations.ipynb, this notebook presents an example of semantic search leveraging the vector search capabilities in IRIS (using the pyodbc style DB-API connection). 
-
-## Quick Start App
-
-### [simpleFlask](Apps/README.md)
-This allows you to quickly get started with a full stack app that uses a flask backend connected to an IRIS db. The frontend is basic HTML,javacript and css served from flask. 
-This app uses the DB-API connectors, so this starter app along with demo notebooks : [IRISDatabaseOperations.ipynb](demo/IRISDatabaseOperations.ipynb) and  [SemanticSearch.ipynb](demo/SemanticSearch.ipynb)
-can be used to make a more advanced app that leverages the vector search capabilities of IRIS
-
 
 ## Which to use?
 
