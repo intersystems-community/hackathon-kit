@@ -2,3 +2,4 @@
 .DS_STORE
 /demo/.DS_STORE
 /external/.DS_STORE
+venv/
