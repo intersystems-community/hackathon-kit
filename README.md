@@ -49,7 +49,7 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
     Mac OS:
 
     ```Shell
-    pip install /install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-macosx_10_9_universal2.whl 
+    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-macosx_10_9_universal2.whl 
     ```
 
     Windows AMD64:
