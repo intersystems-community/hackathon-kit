@@ -88,11 +88,13 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
 
 ## Basic Demos
 
-### [sql_demo.ipynb](demo/sql_demo.ipynb) - Recommended!
+### [IRISDatabaseOperationsUsingSQL.ipynb](demo/IRISDatabaseOperationsUsingSQL.ipynb) - Recommended!
 
 This demo uses our latest db api driver, which is more efficient. 
 
-In this demo, we're searching a whiskey dataset for whiskeys that are priced < $100 and have a taste description similar to "earthy and creamy taste". This demo uses SQL for vector search.
+Here, we first demonstrate how to connect to an IRIS db and carry out basic CRUD operations.
+
+We then use IRIS Vector seach in a whishkey dataset to find whiskeys that are priced < $100 and have a taste description _similar_ to "earthy and creamy taste". This demo uses SQL for vector search.
 
 ### [langchain_demo.ipynb](demo/langchain_demo.ipynb)
 
