@@ -3,3 +3,5 @@
 /demo/.DS_STORE
 /external/.DS_STORE
 venv/
+/demo/.ipynb_checkpoints/
+.venv
