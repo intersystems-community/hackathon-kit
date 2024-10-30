@@ -13,7 +13,12 @@
     pip install --no-cache-dir -r requirements.txt 
     ```
 
-3. Open your browser and go to:
+3. Start the Flask application:
+   ```bash
+   python3 flaskBackend.py
+   ```
+
+4. Open your browser and go to:
 
     [http://localhost:5010](http://localhost:5010)
 
