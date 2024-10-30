@@ -20,8 +20,8 @@ import iris
 import json
 
 namespace="USER"
-port = os.getenv("DATABASE_PORT", "1972")
-hostname= os.getenv("DATABASE_HOST", "localhost")
+port = "1972"
+hostname= "localhost"
 connection_string = f"{hostname}:{port}/{namespace}"
 username = "demo"
 password = "demo"

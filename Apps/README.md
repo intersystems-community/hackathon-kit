@@ -7,10 +7,10 @@
     cd simpleFlask
     ```
 
-2. Start the application using Docker Compose:
+2. Install the dependencies:
 
     ```bash
-    docker compose up
+    pip install --no-cache-dir -r requirements.txt 
     ```
 
 3. Open your browser and go to:
