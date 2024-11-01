@@ -12,7 +12,9 @@
     ```bash
     pip install --no-cache-dir -r requirements.txt 
     ```
-
+    
+    Also make sure that you have followed step 5 to install the db-api driver from [`README.md`](../README.md) 
+    
 3. Start the Flask application:
    ```bash
    python3 flaskBackend.py
