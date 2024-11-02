@@ -11,27 +11,31 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
     ```
 
 
-2. Install IRIS Community Edtion in a container. This will be your SQL database server. 
+2. Install IRIS Community Edtion in a container. This will be your SQL database server.
     ```Shell
     docker run -d --name iris-comm -p 1972:1972 -p 52773:52773 -e IRIS_PASSWORD=demo -e IRIS_USERNAME=demo intersystemsdc/iris-community:latest
     ```
-   After running the above command, you can access the System Management Portal via http://localhost:52773/csp/sys/UtilHome.csp. 
+   After running the above command, you can access the System Management Portal via http://localhost:52773/csp/sys/UtilHome.csp.
 
 3. Create a Python environment and activate it (conda, venv or however you wish) For example:
-    
+
     conda:
     ```Shell
     conda create --name iris-env python=3.10
     conda activate
     ```
-    or 
+    venv(Mac):
+    ``` Shell
+    python3 -m venv iris-env
+    source iris-env/bin/activate
+    ```
+    or
 
     venv (Windows):
     ```Shell
-    python -m venv iris-env
     .\iris-env\Scripts\Activate
     ```
-    or 
+    or
 
     venv (Unix):
     ```Shell
@@ -49,7 +53,7 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
     Mac OS:
 
     ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-macosx_10_9_universal2.whl 
+    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-macosx_10_9_universal2.whl
     ```
 
     Windows AMD64:
@@ -60,12 +64,12 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
 
     Windows 32:
     ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-win32.whl 
+    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-win32.whl
     ```
 
     Linux aarch64:
     ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl 
+    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
     ```
 
     Linux x86_64:
@@ -90,7 +94,7 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
 
 ### [IRISDatabaseOperationsUsingSQL.ipynb](demo/IRISDatabaseOperationsUsingSQL.ipynb) - Recommended!
 
-This demo uses our latest db api driver, which is more efficient. 
+This demo uses our latest db api driver, which is more efficient.
 
 Here, we first demonstrate how to connect to an IRIS db and carry out basic CRUD operations.
 
@@ -98,11 +102,11 @@ We then use IRIS Vector seach in a whishkey dataset to find whiskeys that are pr
 
 ### [langchain_demo.ipynb](demo/langchain_demo.ipynb)
 
-IRIS now has a langchain integration as a VectorDB! In this demo, we use the langchain framework with IRIS to ingest and search through a document. 
+IRIS now has a langchain integration as a VectorDB! In this demo, we use the langchain framework with IRIS to ingest and search through a document.
 
 ### [llama_demo.ipynb](demo/llama_demo.ipynb)
 
-IRIS now has a llama_index integration as a VectorDB! In this demo, we use the llama_index framework with IRIS to ingest and search through a document. 
+IRIS now has a llama_index integration as a VectorDB! In this demo, we use the llama_index framework with IRIS to ingest and search through a document.
 
 ## SQL Vector SearchSyntax
 
@@ -112,7 +116,7 @@ Here's some [`documentation`](demo/SQLSyntax.md) on of our vector search syntax.
 
 If you need to use search with filters, use IRIS SQL. This is the most flexible way to build RAG.
 
-If you're building a genAI app that uses a variety of langchain tools (agents, chained reasoning, api calls), go for langchain. 
+If you're building a genAI app that uses a variety of langchain tools (agents, chained reasoning, api calls), go for langchain.
 
 If you're building a simple RAG app, go for llama_index.
 

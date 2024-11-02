@@ -3,5 +3,6 @@
 /demo/.DS_STORE
 /external/.DS_STORE
 venv/
+iris-env/
 /demo/.ipynb_checkpoints/
 .venv
