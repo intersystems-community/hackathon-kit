@@ -2,12 +2,14 @@
 
 This year, we're adding a powerful [Vector Search capability to the InterSystems IRIS Data Platform](https://www.intersystems.com/news/iris-vector-search-support-ai-applications/), to help you innovate faster and build intelligent applications powered by Generative AI. At the center of the new capability is a new [`VECTOR` native datatype](https://docs.intersystems.com/iris20241/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_datatype#RSQL_datatype_vector) for IRIS SQL, along with [similarity functions](https://docs.intersystems.com/iris20241/csp/docbook/Doc.View.cls?KEY=GSQL_vecsearch) that leverage optimized chipset instructions (SIMD). Basically, IRIS is a SQL database that's really fast, and now has vector search built in!
 
+_Prerequisite_ - [Docker](https://www.docker.com) must be installed and running for the commands below to work!
 
 ## Quickstart
 
 1. Clone the repo
     ```Shell
     git clone https://github.com/intersystems-community/hackathon-2024.git
+    cd hackathon-2024
     ```
 
 
@@ -33,6 +35,7 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
 
     venv (Windows):
     ```Shell
+    python3 -m venv iris-env
     .\iris-env\Scripts\Activate
     ```
     or
@@ -43,7 +46,7 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
     source ./iris-env/bin/activate
     ```
 
-4. Install packages for all demos:
+4. Install packages for all demos -- *Note*: This command might take a while to run (as it freezes for some time which looks like its stuck):
     ```Shell
     pip install -r requirements.txt
     ```
@@ -81,6 +84,13 @@ This year, we're adding a powerful [Vector Search capability to the InterSystems
     ```
     OPENAI_API_KEY=xxxxxxxxx
     ```
+
+7. To run the demo, open VSCode and navigate to 'File -> Open Folder...' and select the hackathon folder
+
+8. Open the notebook file you want to run from the 'Demo' folder
+
+9. In the top right of the notebook click 'Select Kernel' and select 'iris-env' to activate the environment that was created
+
 
 ## Using the Management Portal
 
