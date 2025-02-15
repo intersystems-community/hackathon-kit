@@ -48,12 +48,12 @@ _Prerequisite_ - [Docker](https://www.docker.com) must be installed and running 
     source ./iris-env/bin/activate
     ```
 
-5. Install packages for all demos -- *Note*: This command might take a while to run (as it freezes for some time which looks like its stuck):
+4. Install packages for all demos -- *Note*: This command might take a while to run (as it freezes for some time which looks like its stuck):
     ```Shell
     pip install -r requirements.txt
     ```
 
-6. Install Intersystem's DB API driver . Choose one option, based on your Operating System. Usage of the driver is subject to [`Terms and Conditions`](https://www.intersystems.com/IERTU)
+5. Install Intersystem's DB API driver . Choose one option, based on your Operating System. Usage of the driver is subject to [`Terms and Conditions`](https://www.intersystems.com/IERTU)
 
     Mac OS:
 
@@ -82,16 +82,22 @@ _Prerequisite_ - [Docker](https://www.docker.com) must be installed and running 
     pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
     ```
 
-7. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Create a `.env` file in this repo to store the key:
+6. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Create a `.env` file in this repo to store the key:
     ```
     OPENAI_API_KEY=xxxxxxxxx
     ```
 
-8. To run the demo, open VSCode and navigate to 'File -> Open Folder...' and select the hackathon folder
+7. You can run the demo notebooks using jupyter notebooks or VSCode. To run using jupyter notebooks:
+    ```Shell
+    pip install jupyter
+    jupyter notebook
+    ``` 
 
-9. Open the notebook file you want to run from the 'Demo' folder
+8. To run the demo using VSCode:
+   - Open VSCode and navigate to **File -> Open Folder...**, then select the **hackathon** folder.
+   - Open the notebook file you want to run from the **Demo** folder.
+   - In the **top right** of the notebook, click **Select Kernel** and select **iris-env** to activate the environment that was created.
 
-10. In the top right of the notebook click 'Select Kernel' and select 'iris-env' to activate the environment that was created
 
 
 ## Using the Management Portal
