@@ -82,6 +82,25 @@ _Prerequisite_ - [Docker](https://www.docker.com) must be installed and running 
     pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
     ```
 
+   **Note**: When using the containerized IRIS instance, you may encounter an error with the `import iris` statement. If this happens, add the following code at the top of your notebook:
+   ```python
+   import os
+   # Set the environment variable to allow iris import to work with containerized IRIS
+   os.environ['IRISINSTALLDIR'] = '/usr'
+   ```
+
+   **SSL Certificate Issue**: If you encounter SSL certificate verification errors when running notebooks (especially with NLTK), add the following code at the top of your notebook:
+   ```python
+   # Fix SSL certificate verification issues
+   import ssl
+   try:
+       _create_unverified_https_context = ssl._create_unverified_context
+   except AttributeError:
+       pass
+   else:
+       ssl._create_default_https_context = _create_unverified_https_context
+   ```
+
 6. For [`langchain_demo.ipynb`](demo/langchain_demo.ipynb) and [`llama_demo.ipynb`](demo/llama_demo.ipynb), you need an [OpenAI API Key](https://platform.openai.com/api-keys). Create a `.env` file in this repo to store the key:
     ```
     OPENAI_API_KEY=xxxxxxxxx
