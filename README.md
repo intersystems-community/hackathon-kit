@@ -53,33 +53,10 @@ _Prerequisite_ - [Docker](https://www.docker.com) must be installed and running 
     pip install -r requirements.txt
     ```
 
-5. Install Intersystem's DB API driver . Choose one option, based on your Operating System. Usage of the driver is subject to [`Terms and Conditions`](https://www.intersystems.com/IERTU)
-
-    Mac OS:
+5. Install InterSystem's DB API driver. Usage of the driver is subject to [`Terms and Conditions`](https://www.intersystems.com/IERTU)
 
     ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-macosx_10_9_universal2.whl
-    ```
-
-    Windows AMD64:
-
-    ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-win_amd64.whl
-    ```
-
-    Windows 32:
-    ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-win32.whl
-    ```
-
-    Linux aarch64:
-    ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-    ```
-
-    Linux x86_64:
-    ```Shell
-    pip install ./install/intersystems_irispython-5.0.1-8026-cp38.cp39.cp310.cp311.cp312-cp38.cp39.cp310.cp311.cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    pip install intersystems-irispython
     ```
 
    **Note**: When using the containerized IRIS instance, you may encounter an error with the `import iris` statement. If this happens, add the following code at the top of your notebook:

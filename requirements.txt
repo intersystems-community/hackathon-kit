@@ -1,5 +1,6 @@
 langchain-iris
 testcontainers-iris
+intersystems-irispython
 llama-iris
 llama-index-legacy
 sentence-transformers
