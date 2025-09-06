@@ -8,8 +8,8 @@ _Prerequisite_ - [Docker](https://www.docker.com) must be installed and running 
 
 1. Clone the repo
     ```Shell
-    git clone https://github.com/intersystems-community/hackathon-2024.git
-    cd hackathon-2024
+    git clone https://github.com/intersystems-community/hackathon-kit.git
+    cd hackathon-kit
     ```
 
 
